@@ -1,2 +1,6 @@
 # CompetitiveCollaboration 
- 
+ Using low level information like depth, camera motion and optical flow to solve a segmentation task
+Segmentation of the scene into moving objects and the static background using low level information like depth, camera motion and optical flow and learning to solve them together can simplify the problem because the solutions can reinforce each other.This is a challenging problem because each of these problems is highly ambiguous. We implemented a reinforce learning that in which two neural networks compete on assigning pixels which is moderated by third neural network. two neural networks compete and then collaborate to train third neural network for next iteration of competition. This framework is called "competitive collaboration" and is trained stage by stage and start the learning of later stages after previous stages are converged. We trained Neural networks and performed the task of segmentation of the scene into moving objects and the static background  by using depth detection and the camera motion and optical flow of moving objects
+
+data links : https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data/2011_09_29_drive_0071/2011_09_29_drive_0071_extract.zip
+https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data/2011_09_28_drive_0002/2011_09_28_drive_0002_extract.zip
